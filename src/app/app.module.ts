@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CustomerComponent } from './components/customer/customer.component';
+import { LoginComponent } from './components/login/login.component';
+import { SiteLayoutComponent } from './components/site-layout/site-layout.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CustomerComponent } from './components/customer/customer.component';
     HeaderComponent,
     FooterComponent,
     DashboardComponent,
-    CustomerComponent
+    CustomerComponent,
+    LoginComponent,
+    SiteLayoutComponent
   ],
   imports: [
     BrowserModule,
