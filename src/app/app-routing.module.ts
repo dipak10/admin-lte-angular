@@ -1,3 +1,6 @@
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { HomeComponent } from './components/home/home.component';
+import { RegisterComponent } from './components/register/register.component';
 import { SiteLayoutComponent } from './components/site-layout/site-layout.component';
 import { CustomerComponent } from './components/customer/customer.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -6,16 +9,21 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
+  // Routes with Layout
   {
     path: '',
     component: SiteLayoutComponent,
     children: [
-      { path: '', component: DashboardComponent, pathMatch: 'full'},
+      { path: '', component: HomeComponent, pathMatch: 'full'},
       { path: 'dashboard', component: DashboardComponent, pathMatch: 'full'},
       { path: 'customer', component: CustomerComponent, pathMatch: 'full'}
     ]
   },
-  { path: 'login', component: LoginComponent},
+  // Routes without Layout
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'forgot-password', component: ForgotPasswordComponent },
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({

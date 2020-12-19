@@ -10,6 +10,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CustomerComponent } from './components/customer/customer.component';
 import { LoginComponent } from './components/login/login.component';
 import { SiteLayoutComponent } from './components/site-layout/site-layout.component';
+import { RegisterComponent } from './components/register/register.component';
+import { HomeComponent } from './components/home/home.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { SiteLayoutComponent } from './components/site-layout/site-layout.compon
     DashboardComponent,
     CustomerComponent,
     LoginComponent,
-    SiteLayoutComponent
+    SiteLayoutComponent,
+    RegisterComponent,
+    HomeComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,
